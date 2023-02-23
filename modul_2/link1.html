@@ -59,7 +59,7 @@
 
         <!-- membuat tabel -->
         <h3 align="center" > membuat tabel </h3>
-        <table border="1"> <!--pemberian jarak antar sel-->
+        <table border="1"> <!--tebal garis sel 5 pixel -->
             <caption> contoh pembuatan tabel</caption>
             <!--header-->
             <tr>
@@ -77,6 +77,10 @@
 
         <!--pembuatan tabel ke 2-->
         <table border = "1" align="center" cellspacing="0" cellpadding="5">
+            <!--tebal garis sel 1 pixel-->
+            <!-- tabel diletakkan di tengah-->
+            <!-- jarak antar sel sebesar 0 pixel-->
+            <!-- jarak antara garis sel dengan data sebesar 5 pixel-->
             <caption> tabel menggunakan format </caption>
             <tr>
                 <th> NIM </th>
@@ -89,5 +93,61 @@
                 <td> Piyungan </td>
             </tr>
         </table>
+
+
+        <!--desain tabel-->
+        <table border="1" align="center" cellspacing="0" cellpadding="5">
+            <caption> desain tabel</caption>
+            <tr>
+                <th width="50">Nomor</th>
+                <th width="350" colspan="2">Nama dan Alamat</th>
+            </tr>
+            <!-- baris data pertama -->
+            <tr>
+                <!--gabung baris pertama dan kedua -->
+                <td rowspan=2>Span baris 1 dan 2 </td>
+                <td>Ibnu</td>
+                <td>Jl. Jombang</td>
+            </tr>
+            <!--baris data ke 2-->
+            <tr>
+                <td>Vita</td>
+                <td>Jl. Jakarta </td>
+            </tr>
+        </table>
+
+        <!--membuat form -->
+        <h3> formulir pendaftaran </h3>
+        <form action="" method="post">
+            <table border="0">
+                <tr>
+                    <td>NIK</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td> jenis kelamin </td>
+                    <td>
+                        <input type="radio" />Pria
+                        <input type="radio" />Wanita 
+                    </td>
+                </tr>
+                <tr>
+                    <td>pekerjaan</td>
+                    <td>
+                        <select name="job">
+                            <option>Guru</option>
+                            <option>Wiraswasta</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="ok" />
+                        <input type="submit" value="cancel" />
+                    </td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
