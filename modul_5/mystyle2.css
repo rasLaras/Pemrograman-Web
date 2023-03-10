@@ -1,0 +1,29 @@
+body {
+    margin: 10px auto;
+    width: 750px;
+}
+header, nav, section, footer {
+    display: block;
+    border:1px solid blue;
+}
+header {
+    height: 80px;
+}
+nav {
+    margin-top: 10px;
+    float: left;
+    width: 200px;
+    height: 370px;
+}
+section {
+    margin-top: 10px;
+    margin-left: 249px;
+    width: 500px;
+    height: 370px;
+}
+footer {
+    margin-top: 10px;
+    clear: both;
+    height: 20px;
+
+}
