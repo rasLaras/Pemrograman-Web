@@ -5,6 +5,7 @@
     </head>
     <body>
         <?php
+        echo '<h1>Looping</h1>';
         // while looping
         echo '<h3>While Looping</h3>';
         $i = 0;
