@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Pernyataan selekse</title>
+        <title> Pernyataan seleksi</title>
     </head>
     <body>
         <?php
+            echo '<h1>Pernyataan Seleksi</h1>';
             $a = 10;
             $b = 5;
 
             echo '<h3>Pernyataan if, if-else dan if-elseif</h3>';
             if($a > $b) {
                 echo 'a lebih besar daripada b';
-            } elseif (a < b) {
+            } elseif ($a < $b) {
                 echo 'a kurang daripada b';
             } else {
                 echo 'a sama dengan b';

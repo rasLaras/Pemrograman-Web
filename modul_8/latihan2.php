@@ -6,6 +6,7 @@
     <body>
         <?php
         // deklarasi dan inisialisasi
+        echo '<h1>Variabel</h1>';
         $bil = 3;
         $str = "";
         $ble = null;

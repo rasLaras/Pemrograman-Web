@@ -5,6 +5,9 @@
     </head>
     <body>
         <?php
+        
+        echo '<h1>Tipe Data dan Casting</h1>';
+
         $bil = 3;
         $str = "";
         $cpr = "123abc";
