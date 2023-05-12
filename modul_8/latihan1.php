@@ -9,7 +9,7 @@
         <?php
         echo '<h1>Mencoba program PHP</h1>';
         echo 'disini untuk menulis kode PHP';
-        //...
+        //dan seterusnya...
         ?>
 
         <p> Dokumen html </p>

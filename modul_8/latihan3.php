@@ -1,11 +1,11 @@
-<!DICTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title> Tipe Data dan Casting</title>
     </head>
     <body>
         <?php
-        
+
         echo '<h1>Tipe Data dan Casting</h1>';
 
         $bil = 3;
