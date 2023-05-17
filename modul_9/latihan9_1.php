@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Method Get</title>
+        <title>Menangani Masukan Data</title>
     </head>
 
     <body>
