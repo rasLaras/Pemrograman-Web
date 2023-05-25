@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Latihan 1</title>
     </head>
     <body>
         <h3>Data Mahasiswa</h3>
         <h5>Menambahkan data mahasiswa</h5>
-        <form action="tambah_aksi_full.php" method="post">
+        <form action="insert.php" method="post">
             <table>
                 <tr>
                     <td>NIM</td>
@@ -27,30 +27,34 @@
             </table>
         </form>
 
-        <h5>Menampilkan Data Mahasiswa</h5>
+        <h5>Menampilkan data mahasiswa</h5>
         <table border="1">
             <tr>
-                <td>No</td>
-                <td>NIM</td>
-                <td>Nama</td>
-                <td>Alamat</td>
-                <td>Menu</td>
+                <th>No</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Menu</th>
             </tr>
             <?php
                 include 'koneksi.php';
                 $no = 1;
-                $data = mysqli_query($koneksi, "SELECT * from Mahasiswa");
-                while ($d = mysqli_fetch_array($data)) {
+                $datas =  mysqli_query($koneksi, "SELECT * from Mahasiswa");
+                while($data = mysqli_fetch_array($datas)){
                     ?>
                     <tr>
-                        <td><?php echo $no++;?></td>
-                        <td><?php echo $d['nim']; ?></td>
-                        <td><?php echo $d['nama']; ?></td>
-                        <td><?php echo $d['alamat']; ?></td>
+                        <td><?php echo $no++; ?></td>
+                        <td><?php echo $data['nim']; ?></td>
+                        <td><?php echo $data['nama']; ?></td>
+                        <td><?php echo $data['alamat']; ?></td>
+
                         <td>
-                            <a href="lihat.php?nim=<?php echo $d['nim']; ?>">Lihat</a>
-                            <a href="edit.php?nim=<?php echo $d['nim']; ?>">Edit</a>
-                            <a href="hapus.php?nim=<?php echo $d['nim']; ?>"></a>
+                            <a href="lihat.php?nim=<?php echo $data['nim']; ?>">Lihat</a>
+                            <a href="edit.php?nim=<?php echo $data['nim']; ?>">Edit</a>
+                            <a href="hapus.php?nim=<?php echo $data['nim']; ?>" 
+                                onclick="return confirm('Anda yakin mau menghapus data pada NIM <?php echo $data['nim'] ?> ini?')">
+                                Hapus
+                            </a>
                         </td>
                     </tr>
                     <?php

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-        include("latihan1_koneksi.php");
+        include("koneksi.php");
     ?>
     <head>
         <title>Tes koneksi</title>

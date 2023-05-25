@@ -1,4 +1,4 @@
 <?php
-   $koneksi =mysqli_connect('localhost', 'root', '', 'pemroweb')
+   $koneksi = mysqli_connect('localhost', 'root', '', 'pemroweb')
    or die ('koneksi gagal')
 ?>
