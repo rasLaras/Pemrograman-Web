@@ -12,7 +12,7 @@
         <?php
             include "koneksi.php";
             $nim = $_GET['nim'];
-            $datas = mysqli_query($koneksi, "SELECT * from Mahasiswa WHERE nim='$nim'") or die(mysqli_error());
+            $datas = mysqli_query($koneksi, "SELECT * from mahasiswa WHERE nim='$nim'") or die(mysqli_error());
             $no = 1;
             while($data = mysqli_fetch_array($datas)){
                 ?>

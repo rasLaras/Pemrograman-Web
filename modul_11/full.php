@@ -10,7 +10,7 @@
             <table>
                 <tr>
                     <td>NIM</td>
-                    <td><input type="number" name="nim"></td>
+                    <td><input type="text" name="nim"></td>
                 </tr>
                 <tr>
                     <td>Nama</td>
@@ -39,7 +39,7 @@
             <?php
                 include 'koneksi.php';
                 $no = 1;
-                $datas =  mysqli_query($koneksi, "SELECT * from Mahasiswa");
+                $datas =  mysqli_query($koneksi, "SELECT * from mahasiswa");
                 while($data = mysqli_fetch_array($datas)){
                     ?>
                     <tr>
