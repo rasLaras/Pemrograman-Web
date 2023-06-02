@@ -21,36 +21,69 @@
             $_SESSION['login'] = $username
 
 ?>
-<body>
-    <nav class="navbar navbar-dark bg-success fixed-top">
-        <div class="container-fluid">
+<body class="">
+  <div class=" vh-100">
+    <header class="container-fluid">
+      <nav class="navbar navbar-dark bg-success fixed-top">
+          <div class="container-fluid">
             <a class="navbar-brand fs-2" href="#">Dashboard</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end bg-success text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                
-                <div class="offcanvas-header">
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
+              <div class="offcanvas-header">
+                  <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-success" type="submit">Search</button>
                     </form>
-                </div>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">logout</a>
+                  </li>
+                </ul>
 
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">logout</a>
-                    </li>
-                  </ul>
-                </div>
-
+              </div>
             </div>
+          </div>
+        </nav>
+  </header>
+  <main class="d-flex align-items-center">
+
+      <div class="container-fluid text-dark my-5 py-5">
+        <div class="row container-fluid">
+
+          <!--gambar mahasiswa-->
+          <div class="text-center  col my-4">
+            <img src="mahasiswa.png" width="30%" class="mx-auto">
+            <div class="fs-1 fw-bold">263</div>
+            <div>Data Mahasiswa Tercatat</div>
+          </div>
+
+          <!--gambar gembok-->
+          <div class="text-center  col my-4">
+            <img src="gembok.png" width="30%" class="mx-auto">
+            <div class="fs-1 fw-bold">Keamanan</div>
+            <div>dan Keaslian data Mahasiswa</div>
+          </div>
+
         </div>
-    </nav>
+      </div>
+  </main>
+
+  <!--bagian abu-abu-->
+  <footer class="fixed-bottom mt-auto" style="background-color: rgb(209, 209, 209); height: auto">
+    <div class="text-success text-center d-grid col-4 mx-auto my-5">
+      <div>Untuk memulai klik tombol di bawah ini.</div>
+      <button type="button" class="btn btn-outline-success my-4 start-50">Daftarkan Identitas mahasiswa</button>
+    </div>
+  </footer>
+  </div>
+
 </body>
 <?php
 
