@@ -11,7 +11,7 @@
         <?php
             include "koneksi.php";
             $nim = $_GET['nim'];
-            $data = mysqli_query($koneksi, "SELECT * from mahasiswa WHERE nim='$nim'") or die (mysqli_error());
+            $data = mysqli_query($koneksi, "SELECT * from datamahasiswa WHERE nim='$nim'") or die (mysqli_error());
             $no = 1;
             while($d = mysqli_fetch_array($data)) {
             ?>
@@ -33,6 +33,6 @@
         <?php
             }
         ?>
-        <a href="full.php"> <<<<< Kembali lihat semua data</a>
+        <a href="tabel.php"> <<<<< Kembali lihat semua data</a>
     </body>
 </html>

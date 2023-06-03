@@ -1,0 +1,10 @@
+.objek1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px brown solid;
+    background-color:lightsalmon;
+    line-height: 250px;
+    font-size: medium;
+    text-align: center;
+}

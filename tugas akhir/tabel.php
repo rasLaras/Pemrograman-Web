@@ -11,6 +11,7 @@
     <title>Input Data Mahasiswa</title>
 </head>
 <body>
+
     <header class="container-fluid">
       <nav class="navbar navbar-dark bg-success fixed-top">
           <div class="container-fluid">
@@ -31,7 +32,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="login.php">logout</a>
+                      <a class="nav-link" href="mulai.php">logout</a>
                   </li>
                 </ul>
 
@@ -41,7 +42,7 @@
         </nav>
     </header>
     <main class="">
-        <div class="container-fluid bg-dark py-5 my-5 text-light  fw-bold align-items-center">
+        <div class="container-fluid bg-dark py-5 my-5 text-light vh-100 fw-bold align-items-center">
             <div class="fs-1 text-center mb-5 my-5">Masukkan data anda</div>
             
             <form action="insert.php" class=" container col-sm-6" method="post">

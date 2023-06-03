@@ -43,7 +43,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="login.php">logout</a>
+                      <a class="nav-link" href="mulai.php">logout</a>
                   </li>
                 </ul>
 
@@ -60,7 +60,7 @@
           <!--gambar mahasiswa-->
           <div class="text-center  col my-4">
             <img src="mahasiswa.png" width="30%" class="mx-auto">
-            <div class="fs-1 fw-bold">263</div>
+            <div class="fs-1 fw-bold">12.473</div>
             <div>Data Mahasiswa Tercatat</div>
           </div>
 
@@ -99,7 +99,7 @@
 
         }
 
-    } else {
+    } else  { 
 
 ?>
 <body class="">
@@ -133,14 +133,12 @@
                         <input name="username" type="text" class="form-control" placeholder="username" style="background-color: rgb(234, 234, 234);">
                     </div>
                     <div class="input-group py-3">
-                        <input name="password" type="text" class="form-control" placeholder="password" style="background-color: rgb(234, 234, 234);">
+                        <input name="password" type="password" class="form-control" placeholder="password" style="background-color: rgb(234, 234, 234);">
                     </div>
                     <button name="login" type="submit" class="btn btn-success my-4">LOGIN</button>
                     <hr class="hr hr-blurry">
                 </form>
             </div>
-
-
         </div>
     </div>
 </body>
