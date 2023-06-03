@@ -6,6 +6,7 @@
     <body>
         <h3>Data Mahasiswa</h3>
         <h5>Menambahkan data mahasiswa</h5>
+        <div>
         <form action="insert.php" method="post">
             <table>
                 <tr>
@@ -26,7 +27,7 @@
                 </tr>
             </table>
         </form>
-
+        </div>
         <h5>Menampilkan data mahasiswa</h5>
         <table border="1">
             <tr>
